@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .clearfix::after,
+.clearfix::before {
+    content: '';
+    display: block;
+    clear: both;
+    
+} */
+.header {
+    width: 1200px;
+    margin: 25px  auto;
+    
+}
+.top-bar .left {
+    float: left;
+    
+}
+.top-bar .left h1 {
+    float: left;
+}
+
+.top-bar .left ul {
+    float: left;
+    margin-left: 50px;
+} 
+.top-bar .left li {
+    float: left;
+    
+    padding: 10px 23px 8px;
+    font-size: 18px ;
+    
+} 
+
+.top-bar .left li:hover {
+    border-bottom: blue 2px solid;
+}
+
+.top-bar .right {
+    float: right;
+
+}
+.clear {
+    clear: both;
+}
+
+
+.right input {
+    width: 364px;
+    height: 43px;
+    padding-left: 15px;
+    outline: none;
+    border: 2px #00A4FF solid;
+}
+
+.top-bar .right li {
+    float: left;
+} 
+.top-bar .right  button {
+    float: right;
+    border: none;
+} 
+
+.top-bar .right  img {
+    width: 45px;
+    height: 47px;
+    cursor: pointer;
+}
+.right .id {
+    line-height: 57px;
+    background-image: url(./images/2.head.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    margin-left: 40px;
+   
+}
+
+.main {
+    width: 100%;
+    background-image: url(./images/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content .left {
+    float: left;
+    margin-top: 13px;
+}
+
+.main-content .left li {
+    margin-top: 13px;
+    
+
+}
+ 
+
+.main-content .left a {
+    display: inline-block;
+    width:172px;
+    height: 44px;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 44px;
+}
+.main-content .left li:hover { 
+    background-color: skyblue;
+}
+
+.main-content .iconfont {
+    font-size: 12px;
+}
+
+.main-content .right {
+    float: right;
+    width: 231px;
+   
+    margin-top: 51px;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.main-content .right h3 {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: skyblue;
+    font-weight: 400;
+    
+}
+
+.main-content .right li {
+    margin:0 20px;
+    border-bottom: 1px #ccc solid;
+    padding: 20px 0;
+}
+
+.main-content .right a {
+    color: black;
+    font-size: 16px;
+}
+.main-content .right p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.main-content .right a:active {
+    color: black;
+}
+
+.main-content button {
+    width: 204px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: 5px;
+    
+    border: 2px solid skyblue;
+    cursor: pointer;
+    font-size: 18px;
+}
+.clear {
+    clear: both;
+}

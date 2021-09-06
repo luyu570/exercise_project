@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="icon" href="./icon/4.jpg">
+    <title>div垂直居中</title>
+</head>
+
+<body>
+    <div class="father">
+        <div class="contain">
+            <div class="content">
+           
+            </div>
+        </div>
+    </div>
+   
+</body>
+<style>
+    /* .contain{
+        position:relative;
+        height: 100vh;
+        border :10px solid blue
+    }
+    .content{
+        background: red;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+    } */
+    
+    /* .contain {  
+        position:relative;
+        height: 100vh;
+        border :10px solid blue
+    }
+
+    .content {
+        background: red;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    } */
+    /* 1 */
+    /* .contain {
+         position:relative;
+        height: 100vh;
+        border :10px solid blue
+    }
+    .content {
+        background: red;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    } */
+    /* .contain { 
+         height: 100vh;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    .content {
+        background: red;
+        height: 200px;
+        width: 200px;
+    } */
+    .contain { 
+         display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 800px;
+        height: 800px;
+        background: red
+    }
+    .content {
+        background: rgb(0, 217, 255);
+        height: 200px;
+        width: 200px;
+        display: inline-grid;
+    }
+    .father{
+        margin: 0 auto; 
+    padding-left: 50%;
+    margin-left: -400px;
+    }
+</style>
+
+</html>

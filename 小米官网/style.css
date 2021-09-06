@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+    background-color: #333333;
+}
+
+.header-nav {
+    background-color: #333;
+}
+.header-left ul {
+    float: left;
+
+}
+
+.header-left li {
+    float: left;
+    padding: 0 8px;}
+    
+
+.header-left a {
+    color: #b0b0b0;
+    line-height: 40px;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right li {
+    float: left;
+    line-height: 40px;
+    padding: 0 8px;
+}
+.header-right a {
+    color: #b0b0b0;
+}
+
+.line {
+    float: left;
+    display: block;
+    height: 14px;
+    width: 1px;
+    margin-top: 13px;
+background-color: #424242;
+
+}
+.header-right .shopping {
+    position: relative;
+    z-index: 1;
+}
+.down {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    width: 400px;
+    height: 115px;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    border: 1px transparent black;
+}
+
+.shopping:hover {
+    background-color: #fff;
+    
+}
+.shopping:hover a{
+    color: #FF6700;
+}
+.header-right .shopping:hover .down {
+    display: block;
+    color: #FF6700;
+}
+.app {
+    position: relative;
+}
+.app:hover .download {
+    display: block;
+    
+}
+.download {
+    position: absolute;
+    display: none;
+    right: -41px;
+    top: 41px;
+    width: 155px;
+    height: 160px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    background-color: #fff;
+}
+.trg {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    margin-left: -10px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #fff transparent;
+
+
+}
+a:hover {
+    color: #fff;
+}

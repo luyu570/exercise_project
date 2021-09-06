@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./icon/1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.content .x {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 20px;
+    line-height: 50px;
+    /* background-color: bisque; */
+}
+
+.content .in {
+    border-bottom: 2px solid white;
+}
+
+.content .x a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content .logn {
+    /* width: 300px; */
+    position: relative;
+    display: inline-block;
+    height: 250px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 35px 20px;
+}
+
+.logn .on h2 {
+    font-size: 15px;
+    color: rgb(185, 193, 196);
+    text-align: left;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(199, 232, 241);
+    border: 1px solid rgb(199, 232, 241);
+    outline: none;
+}
+
+.logn button {
+    position: absolute;
+    right: 19px;
+    bottom: 40px;
+    height: 40px;
+    width: 120px;
+    border-radius: 40px;
+    background-color: rgb(154, 203, 52);
+    color: white;
+    border: none;
+}
+
+.next {
+    margin-top: 30px;
+}
+
+.down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    margin-left: -120px;
+    margin-top: -160px;
+    height: 320px;
+    width: 290px;
+    border-radius: 15px;
+    background-color: rgb(188, 228, 238);
+    animation: move 2s linear infinite alternate;
+    /* animation-direction: alternate ; */
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
+}

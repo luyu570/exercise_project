@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .center {
+        position: relative;
+        width: 520px;
+        height: 281px;
+        margin: 200px auto;
+        border: 1px solid;
+
+
+
+    }
+
+
+
+    li {
+        position: absolute;
+    }
+
+    .btn-left a {
+        position: absolute;
+        width: 35px;
+        height: 81px;
+        background-image: url(./images/btn1.png);
+        background-position: right top;
+        top: 100px;
+        z-index: 999;
+    }
+
+    .btn-right a {
+        position: absolute;
+        width: 35px;
+        height: 81px;
+        background-image: url(./images/btn1.png);
+        background-position: left top;
+        top: 100px;
+        right: 0px;
+        z-index: 999;
+    }
+
+    .center .spot {
+        position: absolute;
+
+
+        bottom: 20px;
+        right: 50%;
+        margin-right: -50px;
+
+    }
+   
+    .spot a {
+        position: relative;
+        float: left;
+        width: 8px;
+        height: 8px;
+        background-color: #CBCBCB;
+        border-radius: 50%;
+        margin: 0 4px;
+        z-index: 999;
+    }
+
+    .spot a:hover {
+        background-color: crimson;
+    }
+  
+    .first {
+        position: absolute;
+        
+        display: none;
+    }
+    .second {
+        position: absolute;
+        
+        display: none;
+    }
+    .three {
+        position: absolute;
+        
+        display: none;
+    }
+    a:hover .first {
+        display: block; 
+    }
+
+</style>
+
+<body>
+    <div class="center">
+        <ul>
+            <li class="first"><a href="#"><img src="./images/轮播1.jpg" alt=""></a></li>
+            <li class="second"><a href="#"><img src="./images/轮播2.jpg" alt=""></a></li>
+            <li class="three"><a href="#"><img src="./images/淘宝轮播图4.webp" alt=""></a></li>
+        </ul>
+        <div class="btn-left"><a href="#"></a></div>
+        <div class="btn-right"><a href="#"></a></div>
+
+        <div class="spot">
+            <a href="#" class="lb-1"></a>
+            <a href="#"></a>
+            <a href="#" class="lb-2"></a>
+            <a href="#"></a>
+            <a href="#" class="lb-3"></a>
+            <a href="#"></a>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

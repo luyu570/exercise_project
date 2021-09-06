@@ -1,0 +1,114 @@
+{
+  "id": "2563958",
+  "name": "exercise",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "443508",
+      "name": "left",
+      "font_class": "552cc14536532",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1555754",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "15325345",
+      "name": "8_round_数字8",
+      "font_class": "8_round",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "15325348",
+      "name": "7_round_数字7",
+      "font_class": "7_round",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "171406",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5030",
+      "name": "购物车满",
+      "font_class": "gouwucheman",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11215220",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "785061",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "21829399",
+      "name": "主页",
+      "font_class": "zhuye-copy",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "1724840",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "21683027",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "21683032",
+      "name": "success",
+      "font_class": "success",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "21683043",
+      "name": "good",
+      "font_class": "good",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "21683046",
+      "name": "hide",
+      "font_class": "hide",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "21683054",
+      "name": "chart-pie",
+      "font_class": "chart-pie",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

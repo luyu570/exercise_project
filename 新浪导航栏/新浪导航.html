@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新浪导航</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.bar,
+.bar-1 {
+    width: 1000px;
+    margin: 100px auto;
+    clear: both;
+    
+}
+.tilte {
+    float: left;
+}
+
+img {
+    width: 160px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+.xl  {
+    
+    background-image: url(./sprites-0227.png);
+    background-repeat: no-repeat;
+    
+    background-position: 0px 10px;
+    width: 180px;
+    float: left;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 24px;
+    margin-left: 50px;
+    position: relative;
+    
+}
+.xl a{
+    font-size: 14px;
+    font-weight: normal;
+    text-indent: 28px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.xl select {
+    width: 50px;
+    height: 19px;
+    font-size: 1px;
+    outline: none;
+}
+
+.right {
+    float: right;
+    background-image: url(./btn_addfav_news.png);
+    background-repeat: no-repeat;
+    background-position: 5px 12px; 
+    padding-left: 20px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+.right span {
+    padding-right: 23px;
+}
+.right :nth-child(2) {
+    display: inline-block;
+    background-image: url(./sprites-0227.png);
+    background-repeat: no-repeat;
+    background-position: 10px -141px;
+    padding-left: 24px;
+}
+
+
+.bar-1 {
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    background-color: #203C7E;
+    margin-top: 12px;
+}
+.bar-1 ul {
+   float: left;
+}
+ul li {
+    float: left;
+    width: 66px;
+    text-align: center;
+    line-height: 50px;
+}
+li a {
+    color: cornsilk; font-size: 15px;
+    margin: 0 3px;
+    
+}
+li:hover {
+    
+    cursor: pointer;
+}
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 66px;
+    height: 50px;
+    background-color: chartreuse;
+    opacity: .3;
+    display: block;
+}
+</style>
+
+</head>
+<body>
+    <div class="bar">
+        <div class="tilte">
+            <img src="./news_logo.png" alt="">
+        </div>
+        <div class="xl"> 
+            <a href="#">新浪客户端</a>
+            <select name="#" id="" value="更多">
+                <option value="">更多</option>
+            </select>  
+        </div>
+            <div class="right">
+                <span><a href="#">设为书签</a></span>
+                <a href="#">手机新浪网</a>
+                
+            </div>
+    </div>
+    <div class="bar-1">
+        
+            <span class="cloud"></span>
+            <ul>
+                <li class="current"><a href="#">滚动</a></li>
+                <span class="line"></span>
+                <li><a href="#">排行</a></li>
+                <span class="line"></span>
+                <li><a href="#">政务</a></li>
+                <span class="line"></span>
+                <li><a href="#">国内</a></li>
+                <span class="line"></span>
+                <li><a href="#">军事</a></li>
+                <span class="line"></span>
+                <li><a href="#">文化</a></li>
+                <span class="line"></span>
+                <li><a href="#">司法</a></li>
+                <span class="line"></span>
+                <li><a href="#">黑猫投诉</a></li>
+                <span class="line"></span>
+                <li><a href="#">图片</a></li>
+                <span class="line"></span>
+                <li><a href="#">视频</a></li>
+                <span class="line"></span>
+                <li><a href="#">体育</a></li>
+                <span class="line"></span>
+                <li><a href="#">娱乐</a></li>
+                <span class="line"></span>
+                <li><a href="#">财经</a></li>
+                <span class="line"></span>
+                <li><a href="#">科技</a></li>
+                <span class="line"></span>
+                <li><a href="#">专题</a></li>
+                <span class="line"></span>
+                
+                
+
+            </ul>
+        
+    </div>
+    <script>
+        let cloud = document.querySelector('.cloud');
+        let bar = document.querySelector('.middle-bar');
+        let lis = document.querySelectorAll('li');
+        //  通过设置一个变量来调整
+        var current = 0;
+        
+        for (var i = 0; i < lis.length;i++){
+            //  鼠标移入
+            lis[i].addEventListener('mouseenter',function(){
+                animate(cloud, this.offsetLeft);
+                
+            })
+            lis[i].addEventListener('mouseleave',function(){
+                animate(cloud, current);
+                
+            })
+            // 点击后鼠标 自动固定当前位置，至于把 offsetLeft 值调整为当前数值
+            lis[i].addEventListener('click',function(){
+                current = this.offsetLeft;
+                
+            })
+        }
+
+        //   封装一个动画函数
+        function animate(obj, target, callback) {
+      //   函数可以作为形参传递进去
+      clearInterval(obj.timer); // 先清除定时器
+
+      obj.timer = setInterval(function () {
+        var step = (target - obj.offsetLeft) / 10; //  计算方法写在 计时器  步长值需要取整
+
+        step = step > 0 ? Math.ceil(step) : Math.floor(step);  //  如果为负值 可以往回后退  正数和负数取整 
+
+        if (obj.offsetLeft == target) {
+
+          clearInterval(obj.timer);
+          //  停止动画
+          if (callback) { callback(); }
+//        如果有callback 当运行结束 执行callback
+        }
+        obj.style.left = obj.offsetLeft + step + 'px';
+      }, 15);
+    }
+    </script>
+</body>
+</html>

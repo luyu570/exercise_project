@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <title>div垂直居中</title>
+</head>
+<style>
+    .main {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        
+    }
+    .main div{
+        border: 1px solid yellow;
+        border-collapse: collapse;
+    }
+    .left {
+        background: rgb(0, 17, 255)
+    }
+    
+    .center {
+        background: red
+    }
+    
+    .right {
+        background: rgb(162, 0, 255)
+    }
+</style>
+
+<body>
+    <article class="main">
+        <div class="left">1</div>
+        <div class="center">2</div>
+        <div class="right">3</div>
+
+        <div class="left">4</div>
+        <div class="center">5</div>
+        <div class="right">6</div>
+
+        <div class="left">7</div>
+        <div class="center">8</div>
+        <div class="right">9</div>
+    </article>
+</body>
+
+</html>

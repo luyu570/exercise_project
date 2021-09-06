@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2563958 */
+  src: url('iconfont.woff2?t=1625316314140') format('woff2'),
+       url('iconfont.woff?t=1625316314140') format('woff'),
+       url('iconfont.ttf?t=1625316314140') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-552cc14536532:before {
+  content: "\e61b";
+}
+
+.icon-left:before {
+  content: "\e68a";
+}
+
+.icon-8_round:before {
+  content: "\e63f";
+}
+
+.icon-7_round:before {
+  content: "\e640";
+}
+
+.icon-right:before {
+  content: "\e622";
+}
+
+.icon-gouwucheman:before {
+  content: "\e600";
+}
+
+.icon-down:before {
+  content: "\e6f7";
+}
+
+.icon-zhuye:before {
+  content: "\e678";
+}
+
+.icon-zhuye-copy:before {
+  content: "\e679";
+}
+
+.icon-ditu:before {
+  content: "\e60b";
+}
+
+.icon-time:before {
+  content: "\e603";
+}
+
+.icon-success:before {
+  content: "\e605";
+}
+
+.icon-good:before {
+  content: "\e607";
+}
+
+.icon-hide:before {
+  content: "\e608";
+}
+
+.icon-chart-pie:before {
+  content: "\e609";
+}
+
